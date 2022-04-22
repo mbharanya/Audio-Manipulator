@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
+    <script src="node_modules/lena.js/dist/browser.js"></script>
     <input type="file" name="file-upload" id="file-upload">
     <canvas id="canvas"></canvas>
+    <canvas id="modified-image"></canvas>
+    <div id="filters">
+        <label>bigGaussian<input type="checkbox" name="bigGaussian"></label><br>
+        <label>blue<input type="checkbox" name="blue"></label><br>
+        <label>brightness<input type="checkbox" name="brightness"></label><br>
+        <label>canny<input type="checkbox" name="canny"></label><br>
+        <label>contrast<input type="checkbox" name="contrast"></label><br>
+        <label>gaussian<input type="checkbox" name="gaussian"></label><br>
+        <label>grayscale<input type="checkbox" name="grayscale"></label><br>
+        <label>green<input type="checkbox" name="green"></label><br>
+        <label>highpass<input type="checkbox" name="highpass"></label><br>
+        <label>invert<input type="checkbox" name="invert"></label><br>
+        <label>laplacian<input type="checkbox" name="laplacian"></label><br>
+        <label>lowpass3<input type="checkbox" name="lowpass3"></label><br>
+        <label>lowpass5<input type="checkbox" name="lowpass5"></label><br>
+        <label>mirror<input type="checkbox" name="mirror"></label><br>
+        <label>noise<input type="checkbox" name="noise"></label><br>
+        <label>prewittHorizontal<input type="checkbox" name="prewittHorizontal"></label><br>
+        <label>prewittVertical<input type="checkbox" name="prewittVertical"></label><br>
+        <label>red<input type="checkbox" name="red"></label><br>
+        <label>roberts<input type="checkbox" name="roberts"></label><br>
+        <label>saturation<input type="checkbox" name="saturation"></label><br>
+        <label>sepia<input type="checkbox" name="sepia"></label><br>
+        <label>sharpen<input type="checkbox" name="sharpen"></label><br>
+        <label>sobelHorizontal<input type="checkbox" name="sobelHorizontal"></label><br>
+        <label>sobelVertical<input type="checkbox" name="sobelVertical"></label><br>
+        <label>thresholding<input type="checkbox" name="thresholding"></label><br>
+    </div>
+    <button id="apply-filter">Apply Filter</button>
+    <button id="play-modified">Play Modified image</button>
+    <button id="stop-modified">Stop Playing</button>
+    <script src="script.js"></script>
 </body>
+
 </html>
